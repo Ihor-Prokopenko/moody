@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "Moody"
+version = "0.1.0"
+description = "The app to analyze comments"
+authors = ["<ihor.prokopenko.dev@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.5"
+djangorestframework = "^3.14.0"
+django-environ = "^0.11.2"
+
+
+[tool.poetry.group.dev.dependencies]
+
+
+[tool.poetry.group.test.dependencies]
+pytest-django = "^4.5.2"
+pytest-cov = "^4.1.0"
+pytest-xdist = "^3.3.1"
+pytest-mock = "^3.11.1"
+pytest-lazy-fixture = "^0.6.3"
+
+
+[tool.pytest.ini_options]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
