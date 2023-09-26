@@ -1,8 +1,21 @@
 # The app to analyze comments
 
+---
 
-#### To add package:
-```poetry add --dev package-name```
+### Poetry
 
-#### To update poetry.lock:
-```poetry lock --no-update```
+- To add package:
+
+  ```poetry add --dev package-name```
+
+- To update poetry.lock:
+
+   ```poetry lock --no-update```
+
+---
+
+### Docker
+
+- To create superuser via docker-compose:
+
+  ```docker-compose run --rm api bash -c "python manage.py createsuperuser"```
