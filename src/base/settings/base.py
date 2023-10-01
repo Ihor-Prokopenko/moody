@@ -29,7 +29,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ["localhost", ]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1:8000", "127.0.0.1"]
 
 
 # Application definition
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+
+    'comments_analyzer',
 
     'django_celery_results',
     'flower',
@@ -128,4 +130,8 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
+
+# Youtube
+
+YOUTUBE_API_KEY = env.str("YOUTUBE_API_KEY")
 
