@@ -19,3 +19,13 @@
 - To create superuser via docker-compose:
 
   ```docker-compose run --rm api bash -c "python manage.py createsuperuser"```
+
+### Youtube API
+
+- To install google-api-python-client
+
+  ```pip install charset-normalizer```
+
+  ```poetry add google-api-python-client```
+
+

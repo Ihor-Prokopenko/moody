@@ -15,6 +15,7 @@ COPY pyproject.toml poetry.lock ${PROJECT_DIR}/
 
 # Install Poetry and project dependencies
 RUN pip install --upgrade pip && \
+    pip install charset-normalizer && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --no-interaction --no-ansi
