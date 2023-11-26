@@ -2,7 +2,7 @@
 name = "Moody"
 version = "0.1.0"
 description = "The app to analyze comments"
-authors = ["<ihor.prokopenko.dev@gmail.com>"]
+authors = ["Ihor Prokopenko <i.prokopenko.dev@gmail.com>"]
 readme = "README.md"
 
 
