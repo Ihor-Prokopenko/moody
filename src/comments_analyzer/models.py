@@ -18,6 +18,7 @@ class YoutubeComment(models.Model):
 
 
 class AnalysisSession(models.Model):                                # TODO: COMPLETE
+    # user = models.ForeignKey('auth.User', on_delete=models.CASCADE) # TODO: UNCOMMENT WHEN READY
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
     ready_to_report = models.BooleanField(null=False, default=False)

@@ -1,5 +1,7 @@
 # The app to analyze comments
 
+![Work flow diagram](MOODY-Work-flow-diagram.png)
+
 ---
 
 ### Poetry

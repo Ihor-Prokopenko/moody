@@ -11,8 +11,8 @@ class CommentsAPIView(APIView):
 
     @staticmethod
     def get(request):
-        dummy_link = "https://www.youtube.com/watch?v=ZDTJDZNUfwA"
-        # dummy_link = "https://www.youtube.com/watch?v=-tg4BR-BPO0"
+        # dummy_link = "https://www.youtube.com/watch?v=ZDTJDZNUfwA"
+        dummy_link = "https://www.youtube.com/watch?v=-tg4BR-BPO0"
 
         video_processor = YoutubeVideoProcessor(video_url=dummy_link)
 
